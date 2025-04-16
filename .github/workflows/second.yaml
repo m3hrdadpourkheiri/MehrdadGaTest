@@ -27,4 +27,5 @@ jobs:
         #env:
           #FLASK_APP: App.py # یا نام فایل اصلی اپلیکیشن Flask شما
         run: |
+          pytest test_App.py
           flask --app App.py run --host=0.0.0.0 --port=5000
