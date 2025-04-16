@@ -23,9 +23,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Run tests
+        run: pytest test_app.py
+
       - name: Run Flask App
         #env:
           #FLASK_APP: App.py # یا نام فایل اصلی اپلیکیشن Flask شما
         run: |
-          pytest test_App.py
           flask --app App.py run --host=0.0.0.0 --port=5000
