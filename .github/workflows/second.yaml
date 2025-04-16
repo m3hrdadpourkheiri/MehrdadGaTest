@@ -24,7 +24,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Flask App
-        env:
-          FLASK_APP: App.py # یا نام فایل اصلی اپلیکیشن Flask شما
+        #env:
+          #FLASK_APP: App.py # یا نام فایل اصلی اپلیکیشن Flask شما
         run: |
           flask run --host=0.0.0.0 --port=5000
